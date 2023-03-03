@@ -1,27 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "env": {
-    "EXAMPLE_ENV_VAR": "example-value"
-  },
-  "build": {
-    "command": "npm run build",
-    "output": "dist"
-  }
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
-
-
-
-
-
