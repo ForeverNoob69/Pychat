@@ -20,7 +20,6 @@
     "output": "dist"
   }
 }
-Once you update the configuration in your vercel.json file, you can re-deploy your application to Vercel.
 
 
 
