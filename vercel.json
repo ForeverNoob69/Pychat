@@ -1,13 +1,28 @@
 {
-    "builds": [{
-        "src": "chat_backend/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-    }],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "chat_backend/wsgi.py"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "EXAMPLE_ENV_VAR": "example-value"
+  },
+  "build": {
+    "command": "npm run build",
+    "output": "dist"
+  }
 }
+Once you update the configuration in your vercel.json file, you can re-deploy your application to Vercel.
+
+
+
+
+
