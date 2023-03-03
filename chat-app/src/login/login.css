@@ -1,0 +1,80 @@
+.login{
+    display: flex;
+}
+.login_left{
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    height: 100vh;
+    background-color: white;
+    place-items: center;
+}
+.login_form{
+    align-items: center;
+    height: 100vh;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 50%; */
+}
+.login_form>input{
+    border: none;
+    background-color: #dceeea;
+    margin: 1rem 0;
+    width: 25rem;
+    padding: 0 1rem;
+    /* opacity: 0.3; */
+}
+
+.login_btn{
+    padding: 0.7rem 3rem;
+    border: none;
+    background-color:#00a884;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: large;
+}
+.login_btn:hover{
+    /* background-color:#00cfa2; */
+    opacity: 0.8;
+    transition: 0.1s ease-in;
+}
+.login_right{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0ed8ac; */
+    background-image: url('https://img.freepik.com/free-vector/background-abstract-halftone-design_23-2148588098.jpg?w=740&t=st=1677657640~exp=1677658240~hmac=775d082486e166c67802c660e7421e519daa1940a12f3bda5d4b1446e3e9b42f');
+    color: white;
+}
+.login_right>h1{
+    font-size:3rem;
+    margin: 1rem 0;
+}
+.login_right>p{
+    font-size: x-large;
+    margin: 1rem 0;
+}
+
+.sign_btn{
+    text-decoration: none;
+    padding: 0.7rem 3rem;
+    border: none;
+    background-color:white;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: large;
+}
+.sign_btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}

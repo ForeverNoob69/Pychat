@@ -1,0 +1,27 @@
+/* .App{
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background-color: #dadbd3;
+  height: 100vh;
+} */
+.app__body{
+  background-color: white;
+  display: flex;
+  /* margin-top: 50px; */
+  height: 90vh;
+  width: 95vw;
+  box-shadow: -3px -5px 8px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px -5px 8px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px -5px 8px -3px rgba(0,0,0,0.75);
+
+}
+
+.App {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #00a884 30%, #ece5dd 30%);
+}
+

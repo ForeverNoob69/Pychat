@@ -1,0 +1,127 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+}
+
+/* Chat header  */
+.chatheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #34ac9e;
+    border-bottom: solid 1px rgb(226, 226, 226);
+}
+.chatheaderLeft{
+    display: flex;
+    align-items: center;
+}
+.name_info>small{
+    margin:  0 10px;
+    padding: 0;
+    color: white;
+
+}
+.name_info>h4{
+    color: white;
+    margin: 0 10px;
+    padding: 0;
+}
+
+/* chat body  */
+
+.chat_body{
+    height: 70vh;
+    background-image: url('https://cdn.wallpapersafari.com/27/32/jt4AoG.jpg');
+    /* background-image: url('https://img.freepik.com/free-vector/hand-drawn-doodle-icons-set_1308-90706.jpg?w=740&t=st=1677658236~exp=1677658836~hmac=89db2012afa49fedc8a8e145122b82d74e82d0a478fe18b9cfe9bf5570126d0f'); */
+    object-fit: cover;
+    overflow-y: scroll;
+}
+
+
+.chat_message{
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+ 
+.avatar_spam{
+    margin: 10px;
+    padding: 0;
+    color: gray;
+}
+.message{
+    position: relative;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.chat_name{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: small;
+    margin-left: 5px;
+}
+
+.sent_message{
+    background-color: white;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 10px;
+}
+.sent_message > p{
+    margin: 0;
+}
+
+.chat_recieved{
+    margin-left: auto;
+}
+.recieved{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.chat_reciever{
+    background-color: #dcf8c6;
+    /* padding: 0.5rem; */
+    border-radius: 10px;
+}
+
+.timeSpan{
+    font-size: xx-small;
+    float: right;
+    right: 0;
+}
+
+/* chat footer  */
+
+.form{
+    width: 100%;
+    display: flex;
+}
+.chat_footer{
+    display: flex;
+    align-items: center;
+    background-color:#f6f6f6;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.form>input{
+    /* border: 1px solid gray; */
+    border-radius: 30px;
+    margin: 0 1rem;
+    font-size: large;
+    height:28;
+    width:90%;
+}
+.emoji_logo{
+    align-items: center;
+}
+.btn{
+    border: none;
+    background-color:#f6f6f6;
+    cursor: pointer;
+}
