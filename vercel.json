@@ -16,11 +16,15 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "build/index.js"
+      "dest": "build/static/$1"
     },
     {
       "src": "/favicon.ico",
       "dest": "build/favicon.ico"
+    },
+    {
+      "src": "/index.html",
+      "dest": "build/index.html"
     },
     {
       "src": "/(.*)",
