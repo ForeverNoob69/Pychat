@@ -1,4 +1,21 @@
-{
+{"builds": [
+    {
+      "src": "backend/**",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "backend/build",
+        "buildCommand": "python manage.py collectstatic --noinput && python manage.py migrate"
+      }
+    },
+    {
+      "src": "frontend/**",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "frontend/build",
+        "buildCommand": "npm install && npm run build"
+      }
+    }
+  ],
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ]
