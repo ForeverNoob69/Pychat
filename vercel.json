@@ -1,5 +1,5 @@
 {
-    "builds":  [
+  "builds": [
     {
       "src": "chat_backend/wsgi.py",
       "use": "@vercel/python",
@@ -13,10 +13,18 @@
       "use": "@vercel/static"
     }
   ],
-    "routes": [
-        {
-            "src": "/(.*)",
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "build/static/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "build/favicon.ico"
+    },
+    {
+      "src": "/(.*)",
       "dest": "chat_backend/wsgi.py"
-        }
-    ]
+    }
+  ]
 }
