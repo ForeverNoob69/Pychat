@@ -15,20 +15,12 @@
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "build/static/$1"
-    },
-    {
       "src": "/favicon.ico",
       "dest": "build/favicon.ico"
     },
     {
-      "src": "/index.html",
-      "dest": "build/index.html"
-    },
-    {
       "src": "/(.*)",
-      "dest": "chat_backend/wsgi.py"
+      "dest": "build/index.html"
     }
   ]
 }
