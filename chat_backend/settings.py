@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-g-k$tr=amxu*=t+x54)5k1)a@v6p75b(^#r#i%7zmrg*p0gk9u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -168,7 +168,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
-
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'chat-app/build/static')]
 
 # Default primary key field type
@@ -182,5 +182,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    ".vercel.app",
+    "https://vercel.app",
 ]
